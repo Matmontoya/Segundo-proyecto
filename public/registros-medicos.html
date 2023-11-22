@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro medicos</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Centro medico Backend</h1>
+    </header>
+    <main class="estilo-formulario">
+        <h2>Registros medicos</h2>
+        <div class="container-form">
+        <form method="post" action="/agregar-medico">
+            <label for="nombres">Nombre</label>
+            <input type="text" id="nombres" name="nombres" required>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            <label for="cedula">Numero de Cedula</label>
+            <input type="number" id="cedula" name="cedula" required>
+            <label for="consultorio">Numero de consultorio</label>
+            <input type="number" id="consultorio" name="consultorio" required>
+            <label for="telefono">telefono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="correo">correo electronico</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="especialidad">Seleccione especialidad</label>
+            <select name="especialidad" id="especialidad" required>
+                <option value="" class="texto-label">seleccione una opcion</option>
+                <option value="medicina general">Medicina general</option>
+                <option value="cardiologia">cardiologia</option>
+                <option value="Medicina interna">Medicina interna</option>
+                <option value="dermatologoia">Dermatologoia</option>
+                <option value="Reabilitacion fisica">Reabilitacion fisica</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Odontologia">Odontologia</option>
+                <option value="Radiologia">Radiologia</option>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+        <a href="index.html"><input type="button" value="Volver"></a>
+    </main>
+</div>
+    <footer>
+        <h2>Realizado por:</h2>
+        <p>Juan Mateus</p>
+    </footer>
+</body>
+</html>
